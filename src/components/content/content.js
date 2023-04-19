@@ -4,18 +4,22 @@ import { Prev, Forward, SearchIcon } from "../svg";
 import { Section } from "../global/section";
 import { Container } from "../global/container";
 import hero from "../../asset/hero.png";
-// import hero2 from "../../asset/hero.png";
+import user from "../../asset/User.png";
 import PlaylistGroup from "./playlistGroup/playlistGroup";
 import { Space } from "antd";
 import styled from "styled-components";
+import UserProfile from "../global/UserProfile";
 
 export default function StyledCont({ className }) {
   return (
     <div className={className}>
       <SearchNav PrevIcon={Prev} ForwIcon={Forward} SearchIcon={SearchIcon} />
-      <Section p="5" b="2">
+      <div className="user">
+        <UserProfile img={user} />
+      </div>
+      <Section p="5" b="2" className="mobile">
         <Space direction="vertical" size={[0, 20]}>
-          <Container img={hero} w="100rem" h="20rem" hero />
+          <Container img={hero} w="100rem" h="14rem" hero />
           <PlaylistGroup />
         </Space>
       </Section>
@@ -38,5 +42,18 @@ export const Content = styled(StyledCont)`
 
   &::-webkit-scrollbar-thumb {
     background: ${(props) => props.theme.color.secondaryColor};
+  }
+
+  .user {
+    display: none;
+  }
+
+  @media (max-width: ${(props) => `${props.theme.screen.tablet}px`}) {
+    .mobile {
+      margin-bottom: 4rem;
+    }
+    .user {
+      display: block;
+    }
   }
 `;

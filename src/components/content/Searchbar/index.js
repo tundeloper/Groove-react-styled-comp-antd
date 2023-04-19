@@ -72,4 +72,8 @@ export const SearchNav = styled(Search)`
     left: 0.5rem;
     z-index: -1;
   }
+
+  @media (max-width: ${(props) => `${props.theme.screen.tablet}px`}) {
+    display: none;
+  }
 `;

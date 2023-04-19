@@ -100,7 +100,7 @@ export const PlaylistCard = styled(App)`
   li {
     width: 15rem;
     height: 18rem;
-    border: 2px solid ${(props) => props.theme.color.primaryColor};
+    border: 1px solid #252424;
     padding: 2rem 0;
     position: relative;
     overflow: hidden;
@@ -139,7 +139,7 @@ export const PlaylistCard = styled(App)`
     transform: translate(-50%);
     position: absolute;
     padding: 5px 8px 15px;
-    border: 2px solid ${(props) => props.theme.color.primaryColor};
+    border: 1.5px solid #252424;
     z-index: 1;
 
     div {
