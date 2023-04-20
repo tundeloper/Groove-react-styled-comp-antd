@@ -16,6 +16,7 @@ body {
     font-family: 'Bw Modelica SS01', sans-serif;
     font-size: 1rem;
     font-weight: 500;
+    overflow-x: hidden
 }
 
 ul {

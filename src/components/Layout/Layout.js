@@ -16,7 +16,7 @@ const Layout = ({ Sider, Content, Mobile, className }) => {
 export const AppLayout = styled(Layout)`
   width: 100vw;
   height: 100vh;
-  /* position: fixed; */
+  position: fixed;
   display: flex;
   gap: 5px;
 

@@ -19,7 +19,7 @@ export default function StyledCont({ className }) {
       </div>
       <Section p="5" b="2" className="mobile">
         <Space direction="vertical" size={[0, 20]}>
-          <Container img={hero} w="100rem" h="14rem" hero />
+          <Container img={hero} w="100rem" h="14rem" hero p="1rem" />
           <PlaylistGroup />
         </Space>
       </Section>
