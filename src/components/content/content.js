@@ -1,6 +1,6 @@
 import React from "react";
 import { SearchNav } from "./Searchbar/index";
-import { Prev, Forward, SearchIcon } from "../svg";
+import { Prev, Forward, SearchIcon, UduXIcon } from "../svg";
 import { Section } from "../global/section";
 import { Container } from "../global/container";
 import hero from "../../asset/hero.png";
@@ -19,7 +19,9 @@ export default function StyledCont({ className }) {
       </div>
       <Section p="5" b="2" className="mobile">
         <Space direction="vertical" size={[0, 20]}>
-          <Container img={hero} w="100rem" h="14rem" hero p="1rem" />
+          <Container img={hero} w="100rem" h="14rem" hero p="1rem">
+            <UduXIcon />
+          </Container>
           <PlaylistGroup />
         </Space>
       </Section>
