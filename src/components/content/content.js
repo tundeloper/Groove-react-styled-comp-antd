@@ -52,7 +52,7 @@ export const Content = styled(StyledCont)`
 
   @media (max-width: ${(props) => `${props.theme.screen.tablet}px`}) {
     .mobile {
-      margin-bottom: 4rem;
+      margin-bottom: 6rem;
     }
     .user {
       display: block;
